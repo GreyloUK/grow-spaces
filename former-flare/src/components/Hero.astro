@@ -1,0 +1,77 @@
+---
+import { Badge } from "@/components/ui/badge";
+
+const stats = [
+  { value: "50+", label: "Spaces Growing" },
+  { value: "2.3×", label: "Avg. Member Growth" },
+  { value: "95%", label: "Client Retention" },
+];
+---
+
+<section class="relative overflow-hidden bg-background py-24 md:py-32">
+  <!-- Warm radial glow -->
+  <div class="hero-glow pointer-events-none absolute inset-0 -z-10"></div>
+  <!-- Subtle warm grain texture -->
+  <div class="hero-grain pointer-events-none absolute inset-0 -z-10 opacity-[0.025]"></div>
+
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mx-auto max-w-3xl text-center">
+
+      <!-- Eyebrow badge -->
+      <Badge
+        className="mb-6 h-auto gap-2 rounded-full border-primary/20 bg-primary/8 px-4 py-1.5 text-sm font-medium text-primary"
+      >
+        <span class="inline-block h-1.5 w-1.5 rounded-full bg-primary"></span>
+        Full-Suite Growth Agency for Coworking
+      </Badge>
+
+      <!-- Headline -->
+      <h1 class="font-heading mb-6 text-5xl font-semibold leading-[1.1] tracking-tight text-foreground md:text-6xl lg:text-7xl">
+        We fill your space —<br />
+        <em class="font-normal not-italic text-primary">every month.</em>
+      </h1>
+
+      <!-- Sub-headline -->
+      <p class="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-muted-foreground">
+        From your website and local SEO to paid ads and member onboarding workflows — we build and run the complete growth system for independent coworking spaces.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href="#contact"
+          class="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-base font-medium text-primary-foreground shadow-sm transition-all hover:opacity-90 hover:shadow-md"
+        >
+          Start Growing Today
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a
+          href="#how-it-works"
+          class="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-7 py-3.5 text-base font-medium text-foreground transition-colors hover:bg-muted"
+        >
+          See How It Works
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="mx-auto mt-20 grid max-w-2xl grid-cols-3 gap-px overflow-hidden rounded-2xl border border-border bg-border">
+      {stats.map((stat) => (
+        <div class="flex flex-col items-center gap-1 bg-card px-6 py-8 text-center">
+          <span class="font-heading text-3xl font-semibold text-primary md:text-4xl">{stat.value}</span>
+          <span class="text-sm text-muted-foreground">{stat.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-glow {
+    background: radial-gradient(ellipse 80% 60% at 50% -10%, oklch(0.565 0.145 38 / 0.12) 0%, transparent 70%);
+  }
+  .hero-grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+  }
+</style>
