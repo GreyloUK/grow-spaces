@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spacesagency.co.uk/sitemap-index.xml
+Sitemap: https://growspaces.co/sitemap-index.xml
