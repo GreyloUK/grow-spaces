@@ -5,16 +5,16 @@ import { ArrowUpRightIcon, Building2Icon, TrendingUpIcon, UsersIcon } from 'luci
 import { MotionPreset } from '@/components/ui/motion-preset'
 import { Rating } from '@/components/ui/rating'
 import { Marquee } from '@/components/ui/marquee'
-import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { CraftButton, CraftButtonLabel, CraftButtonIcon } from '@/components/ui/craft-button'
 import { Badge } from '@/components/ui/badge'
 import CardStack from '@/components/shadcn-studio/blocks/hero-section-36/card-stack'
 
 const clients = [
-  { fallback: 'SO', name: 'Sarah Okafor — Launchpad Cowork, Manchester' },
-  { fallback: 'TD', name: 'Tom Driscoll — The Hub Studios, Bristol' },
-  { fallback: 'PM', name: 'Priya Mehta — Cornerstone Workspace, London' },
+  { src: '/images/logos/index-house.svg', fallback: 'IH', name: 'Index House' },
+  { src: '/images/logos/deskworks.jpg', fallback: 'DW', name: 'Deskworks' },
+  { src: '/images/logos/hive-studios.jpg', fallback: 'HS', name: 'Hive Studios' },
 ]
 
 const stats = [
@@ -161,7 +161,7 @@ const HeroSection = () => {
 
             {/* CTA */}
             <MotionPreset fade slide blur transition={{ duration: 0.5 }} delay={0.7}>
-              <CraftButton render={<a href='#contact' />}>
+              <CraftButton render={<a href='https://www.linkedin.com/in/elliot-blackler/' target='_blank' rel='noopener noreferrer' />}>
                 <CraftButtonLabel>Book a Free Audit</CraftButtonLabel>
                 <CraftButtonIcon>
                   <ArrowUpRightIcon className='size-3 stroke-2 transition-transform duration-500 group-hover:rotate-45' />
@@ -206,6 +206,7 @@ const HeroSection = () => {
                 {clients.map((client, index) => (
                   <Tooltip key={index}>
                     <TooltipTrigger render={<Avatar className='ring-background size-12 ring-2 transition-all duration-300 ease-in-out hover:z-1 hover:-translate-y-1 hover:shadow-md' />}>
+                      <AvatarImage src={client.src} alt={client.name} className='object-cover' />
                       <AvatarFallback className='bg-primary/10 text-primary text-xs font-semibold'>{client.fallback}</AvatarFallback>
                     </TooltipTrigger>
                     <TooltipContent>
@@ -220,7 +221,7 @@ const HeroSection = () => {
                   <Rating readOnly variant='yellow' size={24} value={4.9} precision={0.5} className='max-sm:justify-center' />
                   <p className='font-medium'>4.9</p>
                 </div>
-                <p className='text-sm text-nowrap'>Trusted by 50+ UK spaces</p>
+                <p className='text-sm text-nowrap'>Trusted by UK spaces</p>
               </div>
             </MotionPreset>
 

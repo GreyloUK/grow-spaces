@@ -10,11 +10,11 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { CraftButton, CraftButtonIcon, CraftButtonLabel } from '@/components/ui/craft-button'
 
-const navigationData = [
+const navigationData: { title: string; href: string; external?: boolean }[] = [
   { title: 'Services', href: '#services' },
   { title: 'How It Works', href: '#how-it-works' },
   { title: 'Results', href: '#results' },
-  { title: 'Contact', href: '#contact' },
+  { title: 'Contact', href: 'https://www.linkedin.com/in/elliot-blackler/', external: true },
 ]
 
 const leftLinks = navigationData.slice(0, 2)
@@ -27,7 +27,7 @@ const Navbar = () => {
         {/* Left links */}
         <div className='text-muted-foreground hidden flex-1 items-center gap-8 font-medium md:flex'>
           {leftLinks.map((item) => (
-            <a key={item.href} href={item.href} className='hover:text-foreground text-sm transition-colors'>
+            <a key={item.href} href={item.href} {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className='hover:text-foreground text-sm transition-colors'>
               {item.title}
             </a>
           ))}
@@ -37,7 +37,7 @@ const Navbar = () => {
         <a href='/' className='shrink-0'>
           <img
             src='/logo.svg'
-            alt='Grow Spaces'
+            alt='Spaces Agency'
             className='h-16 w-auto'
           />
         </a>
@@ -45,11 +45,11 @@ const Navbar = () => {
         {/* Right links + CTA */}
         <div className='hidden flex-1 items-center justify-end gap-8 md:flex'>
           {rightLinks.map((item) => (
-            <a key={item.href} href={item.href} className='text-muted-foreground hover:text-foreground text-sm font-medium transition-colors'>
+            <a key={item.href} href={item.href} {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className='text-muted-foreground hover:text-foreground text-sm font-medium transition-colors'>
               {item.title}
             </a>
           ))}
-          <CraftButton render={<a href='#contact' />}>
+          <CraftButton render={<a href='https://www.linkedin.com/in/elliot-blackler/' target='_blank' rel='noopener noreferrer' />}>
             <CraftButtonLabel>Get in Touch</CraftButtonLabel>
             <CraftButtonIcon>
               <ArrowUpRightIcon className='size-3 stroke-2 transition-transform duration-500 group-hover:rotate-45' />
@@ -67,7 +67,7 @@ const Navbar = () => {
             <DropdownMenuGroup>
               {navigationData.map((item) => (
                 <DropdownMenuItem key={item.href}>
-                  <a href={item.href} className='w-full'>{item.title}</a>
+                  <a href={item.href} {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className='w-full'>{item.title}</a>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuGroup>
