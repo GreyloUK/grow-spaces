@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import MetaPixel from "../components/MetaPixel.astro";
 
 const siteUrl = "https://growspaces.co";
 const title = "Spaces Agency — Growth for Coworking Spaces";
@@ -47,7 +48,10 @@ const ogImage = `${siteUrl}/images/og-image.jpg`;
 		<meta name="twitter:image" content={ogImage} />
 
 		<!-- 100% privacy-first analytics -->
-		<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+		<script is:inline async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+		<!-- Meta Pixel -->
+		<MetaPixel />
 	</head>
 	<body class="antialiased">
 		<slot />
