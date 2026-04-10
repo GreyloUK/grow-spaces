@@ -18,8 +18,8 @@ const Footer = () => {
     <footer>
       {/* Logo */}
       <div className='mx-auto flex max-w-2xl justify-center border-x px-8 py-7 xl:max-w-6xl'>
-        <a href='/' className='flex flex-col items-center gap-2'>
-          <span className='font-heading text-2xl font-semibold text-foreground'>Spaces Agency</span>
+        <a href='/' className='flex flex-col items-center gap-3'>
+          <img src='/logo.svg' alt='Grow Spaces' className='h-14 w-auto' />
           <span className='text-muted-foreground text-sm'>Growth for Flexible Workspaces</span>
         </a>
       </div>

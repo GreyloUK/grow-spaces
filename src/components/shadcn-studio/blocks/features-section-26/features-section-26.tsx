@@ -25,7 +25,7 @@ const processData: DataType[] = [
     id: 'connect-tools',
     icon: <WrenchIcon />,
     title: 'Build Your Full Stack',
-    description: 'We design and launch your site, SEO strategy, ad campaigns, and automated member workflows — all connected.',
+    description: 'We design and launch your site, SEO strategy, ad campaigns, and automated member workflows, all connected.',
   },
   {
     id: 'review-and-refine',
@@ -101,7 +101,7 @@ const ProcessSection = () => {
           Simple to start, powerful at scale
         </h2>
         <p className='text-muted-foreground max-w-xl text-lg'>
-          Three steps from first conversation to a full space — with everything built, managed, and optimised for you.
+          Three steps from first conversation to a full space, with everything built, managed, and optimised for you.
         </p>
       </div>
       <Features data={processData} />

@@ -64,7 +64,7 @@ const Features = () => {
               transition={{ duration: 0.5 }}
             >
               <p className='text-muted-foreground max-w-xl text-lg'>
-                One partner. One system. Built specifically for independent coworking operators — from your first website visit to a signed membership.
+                One partner. One system. Built specifically for independent workspace operators, from your first website visit to a signed membership.
               </p>
             </MotionPreset>
           </div>
@@ -86,7 +86,7 @@ const Features = () => {
                     <span>Web Design & Dev</span>
                   </CardTitle>
                   <CardDescription className='text-lg'>
-                    A fast, conversion-focused website built to turn visitors into enquiries — tailored to your space and location.
+                    A fast, conversion-focused website built to turn visitors into enquiries, tailored to your space and location.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -104,7 +104,7 @@ const Features = () => {
                     <span>Member Workflows</span>
                   </CardTitle>
                   <CardDescription className='text-lg'>
-                    Automated email and CRM sequences that move leads from first enquiry to signed membership — without manual effort.
+                    Automated email and CRM sequences that move leads from first enquiry to signed membership, without manual effort.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -128,7 +128,7 @@ const Features = () => {
                     <span>Local SEO</span>
                   </CardTitle>
                   <CardDescription className='text-lg'>
-                    Rank for high-intent searches in your area. We handle technical SEO, content, and Google Business — sustainably.
+                    Rank for high-intent searches in your area. We handle technical SEO, content, and Google Business. Built to last.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -151,7 +151,7 @@ const Features = () => {
                     <span>Paid Ads (PPC)</span>
                   </CardTitle>
                   <CardDescription className='text-lg'>
-                    Google and Meta campaigns that target people actively searching for coworking in your city — ROI you can measure from day one.
+                    Google and Meta campaigns that target people actively searching for workspace in your city. ROI you can measure from day one.
                   </CardDescription>
                 </CardHeader>
                 <Marquee pauseOnHover duration={20} gap={1} className='flex-1 items-center py-0'>

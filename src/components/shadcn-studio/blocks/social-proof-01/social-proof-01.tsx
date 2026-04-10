@@ -3,7 +3,7 @@ import { Badge } from '@/components/ui/badge'
 
 const proofPoints = [
   { title: 'Average 2.3× lead growth within the first 90 days' },
-  { title: 'Google Partner — certified for flexible workspace campaigns' },
+  { title: 'Google Partner, certified for flexible workspace campaigns' },
   { title: '40% lower cost-per-click than industry benchmark' },
   { title: '#1 local rankings for clients in Manchester, Bristol, and London' },
   { title: '80% year-on-year increase in organic enquiries for SEO clients' },
@@ -21,7 +21,7 @@ const SocialProof = () => {
                 Spaces that trust us to grow them
               </h2>
               <p className='text-muted-foreground max-w-lg text-lg'>
-                Independent operators across the UK use Spaces Agency as their complete marketing team — with measurable results from month one.
+                Independent operators across the UK use Spaces Agency as their complete marketing team, with measurable results from month one.
               </p>
             </div>
 

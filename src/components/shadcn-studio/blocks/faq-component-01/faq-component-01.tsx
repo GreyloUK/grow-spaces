@@ -8,7 +8,7 @@ const faqItems = [
   },
   {
     question: 'How long before we see results?',
-    answer: 'Paid ads typically generate enquiries within the first 2–4 weeks. SEO is a longer game — most clients see meaningful ranking improvements within 3–6 months. Web design and CRM workflows deliver results from day one of going live.',
+    answer: 'Paid ads typically generate enquiries within the first 2-4 weeks. SEO is a longer game, and most clients see meaningful ranking improvements within 3-6 months. Web design and CRM workflows deliver results from day one of going live.',
   },
   {
     question: 'Do we need to be using Cobot or HubSpot already?',
@@ -16,7 +16,7 @@ const faqItems = [
   },
   {
     question: 'What does "full-suite" mean in practice?',
-    answer: 'It means we handle everything from your website through to member onboarding — web design, local SEO, Google and Meta ads, email automation, and CRM workflows. You get one team managing one connected system, not four separate agencies.',
+    answer: 'It means we handle everything from your website through to member onboarding: web design, local SEO, Google and Meta ads, email automation, and CRM workflows. You get one team managing one connected system, not four separate agencies.',
   },
   {
     question: 'Is there a minimum contract length?',
@@ -24,7 +24,7 @@ const faqItems = [
   },
   {
     question: 'How do you measure success?',
-    answer: 'We track enquiries, cost-per-lead, conversion rate, and member growth — not just vanity metrics. Every client gets a monthly report showing exactly what\'s driving results and what we\'re optimising next.',
+    answer: 'We track enquiries, cost-per-lead, conversion rate, and member growth. Not vanity metrics. Every client gets a monthly report showing exactly what\'s driving results and what we\'re optimising next.',
   },
 ]
 
