@@ -18,7 +18,7 @@ const CardStack = ({ items, offset }: { items?: Card[]; offset?: number }) => {
       content: (
         <img
           src='/images/cowork1.jpg'
-          alt='Open-plan coworking space with hot desks and natural light'
+          alt='Open-plan flexible workspace with hot desks and natural light'
           className='border-muted w-87.5 rounded-[12px] border object-cover shadow-sm'
         />
       )
@@ -48,7 +48,7 @@ const CardStack = ({ items, offset }: { items?: Card[]; offset?: number }) => {
       content: (
         <img
           src='/images/cowork4.jpg'
-          alt='Meeting room in a modern coworking space'
+          alt='Meeting room in a modern serviced office'
           className='border-muted w-87.5 rounded-[12px] border object-cover shadow-sm'
         />
       )

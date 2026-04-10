@@ -3,7 +3,7 @@ import { Badge } from '@/components/ui/badge'
 
 const proofPoints = [
   { title: 'Average 2.3× lead growth within the first 90 days' },
-  { title: 'Google Partner — certified for coworking space campaigns' },
+  { title: 'Google Partner — certified for flexible workspace campaigns' },
   { title: '40% lower cost-per-click than industry benchmark' },
   { title: '#1 local rankings for clients in Manchester, Bristol, and London' },
   { title: '80% year-on-year increase in organic enquiries for SEO clients' },
@@ -39,7 +39,7 @@ const SocialProof = () => {
             <div className='relative'>
               <img
                 src='/images/dashboard.jpg'
-                alt='Coworking space marketing results dashboard showing lead growth'
+                alt='Flexible workspace marketing results dashboard showing lead growth'
                 className='w-120 rounded-2xl object-cover shadow-xl'
               />
               <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10' />

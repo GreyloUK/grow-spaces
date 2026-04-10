@@ -3,8 +3,8 @@ import { Badge } from '@/components/ui/badge'
 
 const faqItems = [
   {
-    question: 'Do you work with all types of coworking spaces?',
-    answer: 'Yes — we work with independent coworking spaces, serviced offices, flex-desk providers, and shared studio operators. We don\'t work with large chains; our focus is helping independent operators compete and grow sustainably.',
+    question: 'What types of workspaces do you work with?',
+    answer: 'Coworking spaces, serviced offices, hot desk providers, shared studios, and hybrid spaces that offer a mix. If you run a flexible workspace and want more members through the door, we can help. We don\'t work with large chains; our focus is helping independent operators compete and grow sustainably.',
   },
   {
     question: 'How long before we see results?',

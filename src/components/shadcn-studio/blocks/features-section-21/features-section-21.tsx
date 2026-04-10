@@ -48,7 +48,7 @@ const Features = () => {
             <MotionPreset inView={false} delay={0.3} transition={{ duration: 0.5 }} className='max-w-100'>
               <h2 className='font-heading text-2xl font-semibold sm:text-3xl lg:text-4xl'>
                 <BlurText
-                  text='Marketing services built for coworking spaces.'
+                  text='Marketing services built for flexible workspaces.'
                   delay={50}
                   animateBy='words'
                   direction='bottom'

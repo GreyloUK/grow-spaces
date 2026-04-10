@@ -154,7 +154,7 @@ const HeroSection = () => {
               <p className='text-muted-foreground'>
                 From your website and local SEO to paid ads and member onboarding,{' '}
                 <span className='text-foreground'>we build and run the complete growth system</span>{' '}
-                for independent coworking spaces. You focus on your space —{' '}
+                for coworking spaces, serviced offices, and hot desk providers. You focus on your space —{' '}
                 <span className='text-foreground'>we fill it.</span>
               </p>
             </MotionPreset>

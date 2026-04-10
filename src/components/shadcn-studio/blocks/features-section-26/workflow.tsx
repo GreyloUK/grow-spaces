@@ -83,7 +83,7 @@ const Workflow = ({
   const [showConnecting, setShowConnecting] = useState(false)
   const [showExecutionSummary, setShowExecutionSummary] = useState(false)
 
-  const fullText = 'Audit our coworking space growth system and build a plan'
+  const fullText = 'Audit our workspace growth system and build a plan'
 
   const handleDescribeWorkflow = (cleanup: () => void) => {
     setActiveTab(initialTabId)
@@ -265,7 +265,7 @@ const Workflow = ({
           id='text-prompt'
           value={inputValue}
           onChange={() => setInputValue(inputValue)}
-          placeholder='Describe your coworking space goals...'
+          placeholder='Describe your workspace goals...'
           className='bg-card! field-sizing-content min-h-10 w-full resize-none rounded-none border-0 p-0 text-lg! shadow-none focus-visible:ring-0'
         />
       </div>
