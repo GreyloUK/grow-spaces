@@ -39,7 +39,7 @@ const SocialProof = () => {
             <div className='relative'>
               <img
                 src='/images/dashboard.jpg'
-                alt='Client results dashboard'
+                alt='Coworking space marketing results dashboard showing lead growth'
                 className='w-120 rounded-2xl object-cover shadow-xl'
               />
               <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10' />

@@ -210,7 +210,7 @@ const Features = () => {
           delay={1.65}
           transition={{ duration: 0.6 }}
         >
-          <CraftButton render={<a href='https://www.linkedin.com/in/elliot-blackler/' target='_blank' rel='noopener noreferrer' />}>
+          <CraftButton render={<a href='#contact' />}>
             <CraftButtonLabel>Book a Free Audit</CraftButtonLabel>
             <CraftButtonIcon>
               <ArrowUpRightIcon className='size-3 stroke-2 transition-transform duration-500 group-hover:rotate-45' />

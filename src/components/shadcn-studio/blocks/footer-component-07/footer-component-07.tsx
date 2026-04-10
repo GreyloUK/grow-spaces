@@ -8,7 +8,7 @@ const navLinks: { label: string; href: string; external?: boolean }[] = [
   { label: 'Services', href: '#services' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'Results', href: '#results' },
-  { label: 'Contact', href: 'https://www.linkedin.com/in/elliot-blackler/', external: true },
+  { label: 'Contact', href: '#contact' },
 ]
 
 const Footer = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
         <h2 className='font-heading max-w-89 text-center text-2xl font-semibold md:text-3xl lg:text-4xl'>
           Ready to fill your space?
         </h2>
-        <CraftButton render={<a href='https://www.linkedin.com/in/elliot-blackler/' target='_blank' rel='noopener noreferrer' />}>
+        <CraftButton render={<a href='#contact' />}>
           <CraftButtonLabel>Book a Free Audit</CraftButtonLabel>
           <CraftButtonIcon>
             <MessageSquareTextIcon className='size-3' />
@@ -68,7 +68,13 @@ const Footer = () => {
             <LinkedinIcon className='size-5 text-sky-600 dark:text-sky-400' />
           </a>
         </div>
-        <p className='text-muted-foreground text-sm'>© {year} Spaces Agency. All rights reserved.</p>
+        <p className='text-muted-foreground text-sm'>
+          © {year} Spaces Agency. All rights reserved.
+          <span className='mx-1.5'>·</span>
+          <a href='/privacy/' className='hover:text-foreground underline underline-offset-2 transition-colors'>Privacy</a>
+          <span className='mx-1.5'>·</span>
+          <a href='/terms/' className='hover:text-foreground underline underline-offset-2 transition-colors'>Terms</a>
+        </p>
       </div>
     </footer>
   )

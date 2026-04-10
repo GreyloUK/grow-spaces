@@ -14,7 +14,7 @@ const navigationData: { title: string; href: string; external?: boolean }[] = [
   { title: 'Services', href: '#services' },
   { title: 'How It Works', href: '#how-it-works' },
   { title: 'Results', href: '#results' },
-  { title: 'Contact', href: 'https://www.linkedin.com/in/elliot-blackler/', external: true },
+  { title: 'Contact', href: '#contact' },
 ]
 
 const leftLinks = navigationData.slice(0, 2)
@@ -49,7 +49,7 @@ const Navbar = () => {
               {item.title}
             </a>
           ))}
-          <CraftButton render={<a href='https://www.linkedin.com/in/elliot-blackler/' target='_blank' rel='noopener noreferrer' />}>
+          <CraftButton render={<a href='#contact' />}>
             <CraftButtonLabel>Get in Touch</CraftButtonLabel>
             <CraftButtonIcon>
               <ArrowUpRightIcon className='size-3 stroke-2 transition-transform duration-500 group-hover:rotate-45' />

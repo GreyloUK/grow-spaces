@@ -18,7 +18,7 @@ const CardStack = ({ items, offset }: { items?: Card[]; offset?: number }) => {
       content: (
         <img
           src='/images/cowork1.jpg'
-          alt='Modern coworking space'
+          alt='Open-plan coworking space with hot desks and natural light'
           className='border-muted w-87.5 rounded-[12px] border object-cover shadow-sm'
         />
       )
@@ -28,7 +28,7 @@ const CardStack = ({ items, offset }: { items?: Card[]; offset?: number }) => {
       content: (
         <img
           src='/images/cowork2.jpg'
-          alt='Coworking interior'
+          alt='Members working in a coworking lounge area'
           className='border-muted w-87.5 rounded-[12px] border object-cover shadow-sm'
         />
       )
@@ -38,7 +38,7 @@ const CardStack = ({ items, offset }: { items?: Card[]; offset?: number }) => {
       content: (
         <img
           src='/images/cowork3.jpg'
-          alt='Shared workspace'
+          alt='Private offices inside a serviced coworking building'
           className='border-muted w-87.5 rounded-[12px] border object-cover shadow-sm'
         />
       )
@@ -48,7 +48,7 @@ const CardStack = ({ items, offset }: { items?: Card[]; offset?: number }) => {
       content: (
         <img
           src='/images/cowork4.jpg'
-          alt='Serviced office'
+          alt='Meeting room in a modern coworking space'
           className='border-muted w-87.5 rounded-[12px] border object-cover shadow-sm'
         />
       )
